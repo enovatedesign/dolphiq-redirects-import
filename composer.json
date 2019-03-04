@@ -1,0 +1,21 @@
+{
+  "name": "enovate/dolphiq-redirects-import",
+  "description": "Imports CSV data to the dolphiq_redirects table",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "require": {
+    "craftcms/cms": "^3.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "enovate\\dolphiqredirectsimport\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Dolphiq Redirects Import",
+    "handle": "dolphiqredirectsimport",
+    "developer": "Enovate Design",
+    "developerUrl": "https://www.enovate.co.uk",
+    "class": "enovate\\dolphiqredirectsimport\\DolphiqRedirectsImport"
+  }
+}

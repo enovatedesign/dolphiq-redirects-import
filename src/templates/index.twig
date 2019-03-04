@@ -1,0 +1,11 @@
+{% extends "_layouts/cp" %}
+{% set title = "Dolphiq Redirects Import"|t('plugin-handle') %}
+
+{% block content %}
+    <form enctype="multipart/form-data" method="post" action="redirects/import" >
+        <input type="hidden" name="{{ craft.app.config.general.csrfTokenName }}" value="{{ craft.app.request.csrfToken }}">
+        <input type="file" name="file" />
+        <button type="submit">Import</button>
+    </form>
+
+{% endblock %}
